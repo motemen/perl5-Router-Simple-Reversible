@@ -30,7 +30,7 @@ ROUTE:
             !
                 if ($1) {
                     my ($name) = split /:/, $1, 2;
-                    $args->{$name};
+                    defined $args->{$name} ? $args->{$name} : '';
                 } elsif ($2) {
                     $args->{$2};
                 } elsif ($3) {
