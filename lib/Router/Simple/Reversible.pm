@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use parent 'Router::Simple';
 
-our $VERSION = "0.01";
+our $VERSION = "0.02";
 
 sub path_for {
     my ($self, $dest, $args) = @_;
